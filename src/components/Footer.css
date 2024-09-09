@@ -1,0 +1,53 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .archives ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .archives ul li {
+    margin-bottom: 10px;
+  }
+  
+  .archives ul li a {
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+  .archives ul li a:hover {
+    color: #fff;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+  }
+  
