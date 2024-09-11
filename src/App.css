@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Make the parent container occupy the full viewport height */
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+}
+
+/* Container for sidebar and main content */
+.content-wrapper {
+  display: flex;
+  flex: 1; /* This makes the content take up the remaining space between header and footer */
+}
+
+/* Sidebar styling - 20% width on the left */
+.sidebar {
+  width: 20%; /* Sidebar takes up 20% of the width */
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+  height: 100vh; /* Make sure sidebar takes the full height of the viewport */
+  position: fixed; /* Fix the sidebar on the left */
+  left: 0;
+  top: 0;
+  overflow-y: auto; /* Make the sidebar scrollable if the content exceeds the viewport height */
+}
+
+/* Main content styling */
+.main-content {
+  margin-left: 20%; /* Adjust margin to leave space for the fixed sidebar */
+  width: 80%; /* Main content takes up the remaining 80% */
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included within width */
+  flex-grow: 1;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
   color: white;
+  padding: 20px;
+  text-align: center;
+  width: 80%; /* Footer aligns with the main content */
+  margin-left: 20%; /* Ensure footer starts after the sidebar */
+  box-sizing: border-box;
+  position: relative;
+  bottom: 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Full width on small screens */
+    height: auto;
+    position: relative; /* Sidebar becomes relative on mobile */
+    overflow-y: visible; /* Remove the scroll in case of mobile view */
   }
-  to {
-    transform: rotate(360deg);
+
+  .main-content {
+    margin-left: 0; /* Reset margin for main content */
+    width: 100%; /* Full width for main content */
+  }
+
+  footer {
+    width: 100%; /* Footer takes full width on mobile */
+    margin-left: 0; /* Reset margin */
   }
 }

@@ -1,0 +1,145 @@
+/* Layout for the entire page */
+.layout {
+  display: flex;
+}
+
+/* Sidebar general styling */
+.sidebar {
+  width: 250px; /* Consistent fixed width */
+  background-color: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sidebar box shadow */
+  height: 100vh; /* Full height of the viewport */
+  position: fixed; /* Fixes the sidebar to the left */
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Ensure the main content aligns next to the sidebar */
+.main-content {
+  margin-left: 250px; /* Same width as the sidebar */
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Profile Image Styling */
+.sidebar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* Heading Styling */
+.sidebar h2 {
+  margin-top: 10px;
+}
+
+/* Nav List Styling */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+/* Nav List Item Styling */
+.sidebar ul li {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+/* Link Styling */
+.sidebar a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Active Link Styling */
+.sidebar a.active-link {
+  color: #007bff; /* Highlight active link in blue */
+  font-weight: bold;
+  border-bottom: 3px solid #007bff; /* Underline active link */
+}
+
+/* Hover Effect */
+.sidebar a:hover {
+  color: #0056b3; /* Change to darker blue on hover */
+}
+
+/* Email input styling */
+.sidebar input {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Submit Button styling */
+.sidebar button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff; /* Bootstrap's primary color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Full width for mobile */
+    height: auto; /* Auto height for better scrolling */
+    position: relative; /* Sidebar becomes scrollable */
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding-top: 20px;
+  }
+
+  .sidebar ul li {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .sidebar img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sidebar input {
+    padding: 8px;
+  }
+
+  .sidebar button {
+    padding: 8px;
+  }
+}
+
+/* Responsive design for larger screens */
+@media (min-width: 992px) {
+  .sidebar {
+    width: 250px;
+  }
+
+  .sidebar ul li {
+    font-size: 20px;
+  }
+}

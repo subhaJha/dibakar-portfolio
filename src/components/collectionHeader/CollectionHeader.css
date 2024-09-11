@@ -1,0 +1,73 @@
+/* Header styling */
+header {
+    background-color: #d4b48e; /* Beige-like background */
+    padding: 40px 0; /* Add padding for spacing */
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Breadcrumb Styling */
+  .breadcrumb {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #888; /* Light grey color for breadcrumb text */
+  }
+  
+  .breadcrumb li {
+    margin: 0;
+  }
+  
+  .breadcrumb li + li:before {
+    content: "/";
+    margin: 0 8px;
+    color: #888; /* Grey color for separator */
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: #888;
+    font-weight: 500;
+  }
+  
+  .breadcrumb a:hover {
+    color: #000; /* Darken on hover */
+  }
+  
+  /* Title Styling */
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+    margin: 10px 0 20px 0; /* Margin for spacing */
+    line-height: 1.2;
+  }
+  
+  /* Adjustments for responsive design */
+  @media (max-width: 992px) {
+    h1 {
+      font-size: 36px;
+    }
+  
+    .breadcrumb {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+    }
+  
+    .breadcrumb {
+      font-size: 12px;
+    }
+  
+    .breadcrumb li + li:before {
+      content: '>'; /* Switch separator to '>' for smaller screens */
+    }
+  }
+  
