@@ -7,11 +7,11 @@ const MainContent = () => {
     <div className="main-content">
       <div className="image-slider">
         {/* You can implement a carousel here if needed */}
-        <ProfileImage/>
+        <ProfileImage style="width: 200px "/>
       </div>
       <div className="text-content">
-        <h1>Hello! I'm <span>Dibakar Bhowmik</span> <br /> A <span>Photographer</span>. I Capture Life</h1>
-        <p>I am a Photographer from America far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+        <h1>Hello! I'm <span>Dibakar Bhowmik</span> <br /> A <span>Photographer</span>.  I Capture Life</h1>
+        <p>I am a Photographer from Malda far far away, behind the word mountains, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
         <div className="social-icons">
           <i className="fa fa-twitter"></i>
           <i className="fa fa-facebook"></i>

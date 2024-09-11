@@ -1,40 +1,73 @@
 .main-content {
-    width: 75%;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  width: 75%;
+  padding: 50px;
+  display: flex; /* Align image and text side by side */
+  flex-direction: row; /* Change to row for left-right alignment */
+  justify-content: space-between; /* Add space between image and text */
+  align-items: center; /* Center items vertically */
+}
+
+.image-slider img {
+  width: 100%; /* Make the image take up the full width of its container */
+  max-width: 500px; /* Set a maximum width to limit how big the image can get */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the container without stretching */
+}
+
+.image-slider {
+  width: 40%; /* Adjust this depending on how much space you want the image to take */
+  max-width: 500px; /* You can adjust this to control the image container size */
+  height: auto;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center; /* Center the image inside the image-slider div */
+  align-items: center;
+}
+
+.text-content {
+  width: 60%; /* Adjust width of the text section */
+}
+
+.text-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.text-content h1 span {
+  color: #d4af37;
+}
+
+.text-content p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons i {
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Make layout responsive for smaller screens */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Stack the image and text vertically on small screens */
+    align-items: center;
+    width: 100%; /* Make the content full-width on smaller screens */
   }
-  
-  .main-content .main-image {
-    width: 20%;
-    height: auto;
-    margin-bottom: 20px;
+
+  .image-slider {
+    width: 80%; /* Make the image take up more space on smaller screens */
+    margin-bottom: 20px; /* Add some space below the image */
   }
-  
-  .text-content h1 {
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 1.2;
+
+  .text-content {
+    width: 100%; /* Make the text take full width */
+    text-align: center; /* Center the text */
   }
-  
-  .text-content h1 span {
-    color: #d4af37;
-  }
-  
-  .text-content p {
-    font-size: 18px;
-    margin-top: 20px;
-  }
-  
-  .social-icons {
-    margin-top: 20px;
-  }
-  
-  .social-icons i {
-    font-size: 24px;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
+}

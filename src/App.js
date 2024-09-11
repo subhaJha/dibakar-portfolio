@@ -1,18 +1,35 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
-import MainContent from './components/MainContent';
-import Footer from './components/Footer'
-import './App.css'; 
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Collection from './pages/Collection';
+import AboutMe from './pages/AboutMe';
+import Services from './pages/Services';
+import Blog from './pages/Blog';
+import Newsletter from './pages/Newsletter';
+import './App.css';
 
 function App() {
   return (
-    <div className="app">
-      <div className="content-wrapper">
-        <Sidebar />
-        <MainContent />
+    <Router>
+      <div className="app">
+        <div className="content-wrapper">
+          <Sidebar />
+          <div className="main-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/collection" element={<Collection />} />
+              <Route path="/about" element={<AboutMe />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/newsletter" element={<Newsletter />} />
+            </Routes>
+          </div>
+        </div>
+        <Footer />
       </div>
-      <Footer/>
-    </div>
+    </Router>
   );
 }
 
