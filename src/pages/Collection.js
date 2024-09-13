@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Lightbox from 'react-18-image-lightbox';  // Updated import from 'react-18-image-lightbox'
 import 'react-18-image-lightbox/style.css'; // Import styles for the lightbox
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap for styling
-import './Collection.css'
 import CollectionHeader from '../components/collectionHeader/CollectionHeader';
 const Collection = () => {
   const images = [

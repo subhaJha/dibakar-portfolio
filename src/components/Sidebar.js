@@ -7,7 +7,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <ProfileImage />
-      <h2>Dibakar Bhowmik</h2>
+      <h2 className='text-center'>Dibakar Bhowmik</h2>
       <nav>
         <ul>
           <li>
@@ -45,10 +45,10 @@ const Sidebar = () => {
           </li>
           <li>
             <NavLink
-              to="/blog"
+              to="/creator"
               className={({ isActive }) => (isActive ? 'active-link' : '')}
             >
-              Blog
+              Creator
             </NavLink>
           </li>
           <li>

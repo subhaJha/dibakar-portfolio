@@ -9,6 +9,7 @@ import Services from './pages/Services';
 import Blog from './pages/Blog';
 import Newsletter from './pages/Newsletter';
 import './App.css';
+import AboutMyStory from './components/developer/AboutMyStory';
 
 function App() {
   return (
@@ -17,12 +18,12 @@ function App() {
         <div className="content-wrapper">
           <Sidebar />
           <div className="main-content">
-            <Routes>
+            <Routes>  
               <Route path="/" element={<Home />} />
               <Route path="/collection" element={<Collection />} />
               <Route path="/about" element={<AboutMe />} />
               <Route path="/services" element={<Services />} />
-              <Route path="/blog" element={<Blog />} />
+              <Route path="/creater" element={<AboutMyStory />} />
               <Route path="/newsletter" element={<Newsletter />} />
             </Routes>
           </div>

@@ -1,6 +1,6 @@
 .main-content {
   width: 75%;
-  padding: 50px;
+  /* padding: 50px; */
   display: flex; /* Align image and text side by side */
   flex-direction: row; /* Change to row for left-right alignment */
   justify-content: space-between; /* Add space between image and text */
