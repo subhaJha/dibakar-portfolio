@@ -28,7 +28,7 @@
 .main-content {
   margin-left: 20%; /* Adjust margin to leave space for the fixed sidebar */
   width: 80%; /* Main content takes up the remaining 80% */
-  padding: 20px;
+  /* padding: 20px; */
   box-sizing: border-box; /* Ensure padding is included within width */
   flex-grow: 1;
 }

@@ -28,7 +28,7 @@ const Footer = () => {
         <p>Railway collony, jhaljhalia, Malda, 732102</p>
         <p>+91 9775688767 </p>
       </div>
-      <div> <p>&copy; 2024 Louie Smith. All rights reserved.</p></div>
+      <div> <p>&copy; 2024 Subha Jha. All rights reserved.</p></div>
     </footer>
   );
 };

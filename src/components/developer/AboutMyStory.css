@@ -1,0 +1,30 @@
+.my-story-container {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 50px;
+    font-family: 'Arial', sans-serif; /* Use any font that suits your design */
+}
+
+.title {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+.intro-text, .skills-text, .ambition-text {
+    color: #c770f0; /* Purple color for highlighted text */
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.coding-graphic {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 36px;
+    }
+}
