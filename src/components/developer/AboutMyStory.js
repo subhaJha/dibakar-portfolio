@@ -24,6 +24,7 @@ const AboutMyStory = () => {
                 <Col md={4}>
                     <img src="path_to_your_graphic_image_or_svg" alt="Coding Graphic" className="coding-graphic"/>
                 </Col>
+                hello\
             </Row>
         </Container>
     );
