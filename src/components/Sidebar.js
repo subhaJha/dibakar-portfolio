@@ -21,7 +21,7 @@ const Sidebar = () => {
           </li>
           <li>
             <NavLink
-              to="/collection"
+              to="/dibakar-portfolio/collection"
               className={({ isActive }) => (isActive ? 'active-link' : '')}
             >
               Collection
@@ -29,7 +29,7 @@ const Sidebar = () => {
           </li>
           <li>
             <NavLink
-              to="/about"
+              to="/dibakar-portfolio/about"
               className={({ isActive }) => (isActive ? 'active-link' : '')}
             >
               About Me
@@ -37,7 +37,7 @@ const Sidebar = () => {
           </li>
           <li>
             <NavLink
-              to="/services"
+              to="/dibakar-portfolio/services"
               className={({ isActive }) => (isActive ? 'active-link' : '')}
             >
               My Services
@@ -45,7 +45,7 @@ const Sidebar = () => {
           </li>
           <li>
             <NavLink
-              to="/creator"
+              to="/dibakar-portfolio/creator"
               className={({ isActive }) => (isActive ? 'active-link' : '')}
             >
               Creator
@@ -53,7 +53,7 @@ const Sidebar = () => {
           </li>
           <li>
             <NavLink
-              to="/newsletter"
+              to="/dibakar-portfolio/newsletter"
               className={({ isActive }) => (isActive ? 'active-link' : '')}
             >
               Newsletter

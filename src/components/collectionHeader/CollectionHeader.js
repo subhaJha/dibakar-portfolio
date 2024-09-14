@@ -7,7 +7,7 @@ const CollectionHeader = () => {
       <header>
         <ul className="breadcrumb">
           <li><a href="/">Home</a></li>
-          <li><a href="/collection">Collection</a></li>
+          <li><a href="/dibakar-portfolio/collection">Collection</a></li>
         </ul>
         <h1>My Collection</h1>
       </header>

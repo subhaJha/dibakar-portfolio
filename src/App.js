@@ -20,11 +20,12 @@ function App() {
           <div className="main-content">
             <Routes>  
               <Route path="/" element={<Home />} />
-              <Route path="/collection" element={<Collection />} />
-              <Route path="/about" element={<AboutMe />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/creater" element={<AboutMyStory />} />
-              <Route path="/newsletter" element={<Newsletter />} />
+              <Route path="/dibakar-portfolio" element={<Home />} />
+              <Route path="/dibakar-portfolio/collection" element={<Collection />} />
+              <Route path="/dibakar-portfolio/about" element={<AboutMe />} />
+              <Route path="/dibakar-portfolio/services" element={<Services />} />
+              <Route path="/dibakar-portfolio/creater" element={<AboutMyStory />} />
+              <Route path="/dibakar-portfolio/newsletter" element={<Newsletter />} />
             </Routes>
           </div>
         </div>
