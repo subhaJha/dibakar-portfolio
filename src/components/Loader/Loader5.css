@@ -1,0 +1,113 @@
+/* Loader container with Bootstrap alignment */
+.focus-loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    z-index: 9999;
+    text-align: center;
+  }
+  
+  /* Central camera focus frame */
+  .camera-focus {
+    width: 120px;
+    height: 120px;
+    background-color: #2d2d2d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: focusInOut 2s ease-in-out infinite; /* Focus in/out animation */
+  }
+  
+  /* Focusing lens styling */
+  .focus-lens {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #007bff, #d4af37);
+    border: 5px solid #333;
+    position: relative;
+    animation: rotateLensFocus 3s linear infinite;
+  }
+  
+  /* Glow effect around the focusing lens */
+  .focus-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.4); /* Golden glow */
+    animation: pulseGlowFocus 1.5s ease-in-out infinite;
+  }
+  
+  /* Focusing in and out animation */
+  @keyframes focusInOut {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+  }
+  
+  /* Rotating lens animation */
+  @keyframes rotateLensFocus {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Pulsing glow effect around the lens */
+  @keyframes pulseGlowFocus {
+    0%, 100% {
+      box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 30px 15px rgba(255, 215, 0, 0.8);
+    }
+  }
+  
+  /* Loading text with color-changing effect */
+  .focus-loading-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4af37;
+    animation: colorShiftFocus 2s ease-in-out infinite;
+  }
+  
+  /* Color change between gold and blue for the loading text */
+  @keyframes colorShiftFocus {
+    0% {
+      color: #d4af37;
+    }
+    50% {
+      color: #007bff;
+    }
+    100% {
+      color: #d4af37;
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .camera-focus {
+      width: 80px;
+      height: 80px;
+    }
+    .focus-lens {
+      width: 50px;
+      height: 50px;
+    }
+    .focus-loading-text {
+      font-size: 1.2rem;
+    }
+  }
+  

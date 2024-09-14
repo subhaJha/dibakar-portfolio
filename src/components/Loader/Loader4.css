@@ -1,0 +1,128 @@
+/* Loader container using Bootstrap classes */
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    z-index: 9999;
+    text-align: center;
+  }
+  
+  .camera-box {
+    animation: slideIn 1s ease-out;
+  }
+  
+  /* Camera body styling */
+  .camera {
+    width: 120px;
+    height: 80px;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+    animation: cameraFlash 3s infinite ease-in-out;
+  }
+  
+  /* Camera lens styling with gold and blue gradient */
+  .camera-lens {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: conic-gradient(#d4af37, #007bff, #d4af37, #007bff);
+    border: 5px solid #444;
+    margin: auto;
+    animation: rotateLens 2s linear infinite;
+  }
+  
+  /* Lens flash effect */
+  .lens-flash {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    animation: flashEffect 3s infinite;
+  }
+  
+  /* Slide-in animation for the camera */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Rotate animation for the camera lens */
+  @keyframes rotateLens {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Flash animation for the camera */
+  @keyframes cameraFlash {
+    0%, 100% {
+      background-color: #2d2d2d;
+    }
+    50% {
+      background-color: #555;
+    }
+  }
+  
+  /* Flashing effect for the lens */
+  @keyframes flashEffect {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  /* Loading text styling using gold and blue colors */
+  .loading-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    animation: colorShift 3s ease-in-out infinite;
+  }
+  
+  /* Color-changing effect for the loading text */
+  @keyframes colorShift {
+    0% {
+      color: #d4af37;
+    }
+    50% {
+      color: #007bff;
+    }
+    100% {
+      color: #d4af37;
+    }
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .camera {
+      width: 80px;
+      height: 60px;
+    }
+    .camera-lens {
+      width: 40px;
+      height: 40px;
+    }
+    .loading-text {
+      font-size: 1.2rem;
+    }
+  }
+  

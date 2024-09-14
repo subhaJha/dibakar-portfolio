@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap for styling
 import CollectionHeader from '../components/collectionHeader/CollectionHeader';
 const Collection = () => {
   const images = [
-    'https://link-to-image1.jpg',
+    'https://scontent.frdp4-2.fna.fbcdn.net/v/t39.30808-6/309905239_3337939033128047_3488294041924859010_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_ohc=vCtlM0XNZWMQ7kNvgFfAPJU&_nc_ht=scontent.frdp4-2.fna&_nc_gid=ACcWlF6E-aJxPsRcex7j25C&oh=00_AYBV8Hpx4_nvUdphg9RD_5a3VbfsG0bKqBn3S5oRRHyMxA&oe=66EB7149',
     'https://link-to-image2.jpg',
     'https://link-to-image3.jpg',
     'https://link-to-image4.jpg',
